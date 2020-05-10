@@ -1,0 +1,4 @@
+# Testing scripts
+*.p
+*.test.p
+*.test.js

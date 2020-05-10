@@ -15,6 +15,21 @@ module.exports = [
     replace: "const "
   },
   {
+    name: "And operator",
+    target: /and/g,
+    replace: "&&"
+  },
+  {
+    name: "Or operator",
+    target: /or/g,
+    replace: "||"
+  },
+  {
+    name: "Not operator",
+    target: /not/g,
+    replace: "!"
+  },
+  {
     name: "Console statement",
     target: /print/g,
     replace: "console.log"
@@ -28,6 +43,11 @@ module.exports = [
     name: "Return token",
     target: /<</g,
     replace: "return"
+  },
+  {
+    name: "Case Break",
+    target: /check/g,
+    replace: "break;\ncase"
   },
   {
     name: "Optinal print statement",
